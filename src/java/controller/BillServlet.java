@@ -8,7 +8,10 @@ import model.CartItem;
 
 import java.io.IOException;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/bill")
 public class BillServlet extends HttpServlet {
     @Override

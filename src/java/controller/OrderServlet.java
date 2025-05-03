@@ -8,7 +8,10 @@ import dao.OrderDAO;
 
 import java.io.IOException;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/sendOrder")
 public class OrderServlet extends HttpServlet {
     @Override
@@ -28,5 +31,6 @@ public class OrderServlet extends HttpServlet {
         }
 
         response.sendRedirect("cart.jsp");
+        
     }
 }

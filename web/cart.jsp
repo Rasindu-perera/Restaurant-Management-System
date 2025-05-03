@@ -1,3 +1,6 @@
+<%-- 
+    Author     : RasinduPerera
+--%>
 <%@ page import="model.CartItem" %>
 <%@ page import="java.util.List" %>
 <%
@@ -11,13 +14,36 @@
 <head>
     <meta charset="UTF-8">
     <title>My Cart</title>
+    <style>
+        body { font-family: Arial; padding: 20px; text-align: center; }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+        input[type=number], input[type=submit], button {
+            padding: 6px 10px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        button, input[type=submit] {
+            background: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <h2>My Cart</h2>
+    
 
     <% if (cart != null && !cart.isEmpty()) { %>
         <form action="updateCart" method="post">
-            <table border="1" cellpadding="8" cellspacing="0">
+            <table>
                 <tr>
                     <th>Item</th>
                     <th>Price</th>
@@ -38,9 +64,7 @@
                     </td>
                     <td>Rs. <%= sub %></td>
                     <td>
-                        <button type="submit" formaction="removeFromCart" formmethod="post" name="itemId" value="<%= item.getItem().getId() %>">
-                            Remove
-                        </button>
+                        <button type="submit" formaction="removeFromCart" formmethod="post" name="itemId" value="<%= item.getItem().getId() %>">Remove</button>
                     </td>
                 </tr>
                 <% } %>
@@ -64,7 +88,6 @@
         </form>
     <% } %>
 
-    <br><br>
     <form action="menu" method="get">
         <input type="submit" value="Back to Menu" />
     </form>

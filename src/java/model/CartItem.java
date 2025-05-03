@@ -1,5 +1,8 @@
 package model;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 public class CartItem {
     private MenuItem item;
     private int quantity;

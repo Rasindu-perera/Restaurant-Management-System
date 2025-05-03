@@ -1,5 +1,8 @@
 package model;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 public class Waiter {
     private int waiterId;
     private String name;

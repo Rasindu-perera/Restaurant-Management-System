@@ -7,7 +7,10 @@ import model.CartItem;
 
 import java.io.IOException;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/updateCart")
 public class UpdateCartServlet extends HttpServlet {
     @Override

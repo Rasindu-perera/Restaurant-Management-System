@@ -6,7 +6,10 @@ import util.DBConnection;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 public class MenuDAO {
 
     public List<MenuItem> getItemsByCategory(String category) {

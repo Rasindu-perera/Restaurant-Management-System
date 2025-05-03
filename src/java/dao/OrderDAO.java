@@ -8,7 +8,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 public class OrderDAO {
 
     public void saveOrder(int waiterId, int tableId, List<CartItem> cart) {

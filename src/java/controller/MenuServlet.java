@@ -8,7 +8,10 @@ import model.MenuItem;
 import dao.MenuDAO;
 import java.io.IOException;
 import java.util.List;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/menu")
 public class MenuServlet extends HttpServlet {
     @Override

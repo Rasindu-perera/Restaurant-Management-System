@@ -3,7 +3,10 @@ package dao;
 import util.DBConnection;
 
 import java.sql.*;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 public class TableDAO {
 
     /**

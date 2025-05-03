@@ -9,7 +9,10 @@ import util.DBConnection;
 import java.io.IOException;
 import java.sql.*;
 import java.util.*;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/finalizeBill")
 public class FinalizeBillServlet extends HttpServlet {
     @Override

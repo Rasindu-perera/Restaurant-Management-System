@@ -8,7 +8,10 @@ import dao.WaiterDAO;
 import model.Waiter;
 
 import java.io.IOException;
-
+/**
+ *
+ * @author RasinduPerera
+ */
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
