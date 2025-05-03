@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/controller/CartServlet.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/dao/MenuDAO.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/model/Order.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/dao/OrderDAO.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/web/login.jsp</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/web/index.html</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/controller/MenuServlet.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/model/MenuItem.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/web/bill.jsp</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/controller/LoginServlet.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/web/menu.jsp</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/controller/BillServlet.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/controller/OrderServlet.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/util/DBConnection.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/dao/WaiterDAO.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/model/CartItem.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/src/java/model/Waiter.java</file>
+            <file>file:/C:/Users/Rasindu%20Perera/Documents/NetBeansProjects/RestaurantSystem_Updated/web/cart.jsp</file>
+        </group>
+    </open-files>
+</project-private>
