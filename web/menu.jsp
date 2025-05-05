@@ -1,11 +1,10 @@
 <%-- 
     Author     : RasinduPerera
 --%>
+<%@ page import="java.util.*" %>
 <%@ page import="model.MenuItem" %>
-<%@ page import="java.util.List" %>
 <%
-    List<MenuItem> foodItems = (List<MenuItem>) request.getAttribute("foodItems");
-    List<MenuItem> drinkItems = (List<MenuItem>) request.getAttribute("drinkItems");
+    Map<String, List<MenuItem>> categorizedMenu = (Map<String, List<MenuItem>>) request.getAttribute("categorizedMenu");
 %>
 <!DOCTYPE html>
 <html>
@@ -45,32 +44,23 @@
     <h2>Restaurant Menu</h2>
 
     <form action="cart" method="post">
-        <h3>Food Items</h3>
-        <% if (foodItems != null) {
-            for (MenuItem item : foodItems) { %>
-            <div class="item-box">
-                <img src="images/<%= item.getImageUrl() %>" alt="<%= item.getName() %>">
-                <div><strong><%= item.getName() %></strong></div>
-                <div>Rs. <%= item.getPrice() %></div>
-                <div>
-                    Q: <input type="number" name="quantity_<%= item.getId() %>" value="0" min="0" />
-                    <input type="hidden" name="itemIds" value="<%= item.getId() %>" />
+        <% if (categorizedMenu != null) {
+            for (Map.Entry<String, List<MenuItem>> entry : categorizedMenu.entrySet()) {
+                String categoryName = entry.getKey();
+                List<MenuItem> items = entry.getValue();
+        %>
+            <h3><%= categoryName %></h3>
+            <% for (MenuItem item : items) { %>
+                <div class="item-box">
+                    <img src="images/<%= item.getImageUrl() %>" alt="<%= item.getName() %>">
+                    <div><strong><%= item.getName() %></strong></div>
+                    <div>Rs. <%= item.getPrice() %></div>
+                    <div>
+                        Q: <input type="number" name="quantity_<%= item.getId() %>" value="0" min="0" />
+                        <input type="hidden" name="itemIds" value="<%= item.getId() %>" />
+                    </div>
                 </div>
-            </div>
-        <% } } %>
-
-        <h3>Drink Items</h3>
-        <% if (drinkItems != null) {
-            for (MenuItem item : drinkItems) { %>
-            <div class="item-box">
-                <img src="images/<%= item.getImageUrl() %>" alt="<%= item.getName() %>">
-                <div><strong><%= item.getName() %></strong></div>
-                <div>Rs. <%= item.getPrice() %></div>
-                <div>
-                    Q: <input type="number" name="quantity_<%= item.getId() %>" value="0" min="0" />
-                    <input type="hidden" name="itemIds" value="<%= item.getId() %>" />
-                </div>
-            </div>
+            <% } %>
         <% } } %>
 
         <div>
