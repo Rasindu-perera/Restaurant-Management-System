@@ -1,0 +1,184 @@
+/* body -- full page background */
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #fffcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/* -- FORM SECTION -- */
+
+/* form -- Style for the login  */
+form {
+    background-color: #D9CFCF;
+    padding: 30px 40px;
+    border-radius: 79px;
+    width: 400px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* -- LOGO SECTION -- */
+
+/* .logo -- Style for the restaurant logo image */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: auto;
+}
+
+
+/* -- SUCCESS MESSAGE SECTION -- */
+
+/* p -- Style for login success message text*/
+p {
+    color: #28a745;
+    text-align: center;
+}
+
+
+/* -- LOGIN HEADER SECTION -- */
+
+/* .login-box -- Style for the login header box */
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #111111;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 20px 15px 9px #585757;
+}
+
+/* .login-box h2 -- Style for the login heading text */
+.login-box h2 {
+    color: white;
+    font-size: 26px;
+    font-family: 'Georgia', serif;
+    margin: 0;
+}
+
+
+/* -- FORM FIELD SECTION -- */
+
+/* .div1 -- style for each form input box */
+.div1 {
+    width: 100%;
+    height: 50px;
+    border-radius: 70px;
+    background-color: #111111;
+    box-shadow: 15px 10px 9px #585757;
+    position: relative;
+}
+
+
+/* .form-label -- Style for input field labels */
+.form-label {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    bottom: 15px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+}
+
+
+/* .input-box -- Style for text input fields */
+.input-box {
+    position: absolute;
+    right: 10px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 70px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+/* -- SUBMIT BUTTON SECTION -- */
+
+/* .submit-box -- style for the submit button box */
+.submit-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #111111;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 15px 10px 9px #585757;
+}
+
+/* .submit -- Style for the submit button */
+.submit {
+    padding: 8px 40px;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    color: #0f0e0e;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* .submit:hover -- Hover effect for submit button */
+.submit:hover {
+    background-color: #ee5e4b;
+    transform: scale(1.05);
+}
+
+
+
+/* -- RESPONSIVE DESIGN SECTION -- */
+
+
+@media screen and (max-width: 500px) {
+    
+    form {
+        width: 90%;
+        padding: 30px;
+        font-size: 90%;
+    }
+
+    .form-label {
+        font-size: 12px; 
+    }
+    .logo {
+        width: 70%;
+    }
+
+    
+    .input-box {
+        width: 55%;
+        font-size: 14px;
+    }
+
+    
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    
+    .submit {
+        padding: 8px 30px;
+        font-size: 18px;
+    }
+    
+}
